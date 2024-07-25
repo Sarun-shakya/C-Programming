@@ -3,7 +3,8 @@
 #include<stdio.h>
 
 // Function to swap two integers
-void swap(int a, int b) {
+void swap() {
+    int a, b;
     printf("Enter the value of a and b:\n");
     scanf("%d%d", &a, &b);
     printf("The numbers before swapping are %d and %d\n", a, b);
@@ -17,8 +18,7 @@ void swap(int a, int b) {
 }
 
 int main() {
-    int a, b;
     // Call the swap function with uninitialized variables 'a' and 'b'
-    swap(a, b);
+    swap();
     return 0;
 }
